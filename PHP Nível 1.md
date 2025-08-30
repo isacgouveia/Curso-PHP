@@ -11,15 +11,14 @@
 
 <a id="page1"></a>
 ## Variáveis
-As variáveis em PHP são usadas para armazenar dados que podem ser manipulados ao longo do código. Em PHP, uma variável é declara começando com o simbolo $ seguido de um nome intuitivo sobre o que ela armazena, como $nome ou $idade. Ao declarar uma variável, você pode atribuir valores a ela, como números, strings ou até mesmo objetos e arrays.
+As variáveis em PHP são usadas para armazenar dados que podem ser manipulados ao longo do código. Em PHP, uma variável é declarada começando com o simbolo $ seguido de um nome intuitivo sobre o que ela armazena, como $nome ou $idade. Ao declarar uma variável, você pode atribuir valores a ela, como números, strings ou até mesmo objetos e arrays.
 
 Algumas regras para nomear variáveis:
 - Use nomes significativos e intuitivos ao declarar uma variável;
 - Evite nomear variáveis com palavras reservadas da linguagem;
 - O PHP é case-sentive, ou seja, $variavel e $Variavel são variáveis diferentes;
 
-***Exemplos práticos***
-Exemplo de uma declaração de váriavel em PHP
+***Exemplo de uma declaração de váriavel em PHP***
 ```php
 <?php 
     
@@ -36,7 +35,7 @@ Exemplo de uma declaração de váriavel em PHP
 ## Condicionais e booleanos
 Em PHP, um valor booleano é um tipo de dado básico que pode ter apenas dois valores: true (verdadeiro) ou false (falso). Os booleanos são usado para controlar a execução do código em condições e laços.
 
-Exemplo de uma declaração de valores booleanos em PHP
+***Exemplo de uma declaração de valores booleanos em PHP***
 ```php
 <?php 
     
@@ -49,7 +48,7 @@ Exemplo de uma declaração de valores booleanos em PHP
 
 Em PHP, uma condicional é uma estrutura de controle que permite executar diferentes blocos de código com base no resultado de uma condição, que pode ser verdadeira ou falsa.
 
-Exemplo de uma declaração condicional em PHP
+***Exemplo de uma declaração condicional em PHP***
 ```php
 <?php 
     
@@ -64,6 +63,7 @@ Exemplo de uma declaração condicional em PHP
 ```
 
 Podemos utilizar um bloco de código HTML junto com o condicional.
+***Exemplo prático***
 ```php
     Formato simplificado
     
@@ -84,12 +84,12 @@ Podemos utilizar um bloco de código HTML junto com o condicional.
     </div>
 ```
 
-Retorando os valores do PHP no HTML
+***Retorando os valores do PHP no HTML***
 ```php
     <div><?=$nome ?></div>
 ```
 
-Podemos utilizar expressões matemáticas no condocional
+***Podemos utilizar expressões matemáticas no condocional***
 ```php
     $ano = 2025;
 
@@ -107,7 +107,7 @@ Podemos utilizar expressões matemáticas no condocional
 
 ```
 
-Podemos utilizar o operador de negação (!) para inverter uma condição
+***Podemos utilizar o operador de negação (!) para inverter uma condição***
 ```php
     $admin = true;
 
@@ -126,7 +126,7 @@ Podemos utilizar o operador de negação (!) para inverter uma condição
 Em PHP, um array é uma estrutura de dados fundamental que permite armazenar múltiplos valores de tipos diferentes (como números, strings, objeto ou outros arrays) sob um único nome de variável. É um "mapa ordenado".
 
 Utilizamos o [] para indicar que a variável é do tipo array.
-Exemplo de um array
+***Exemplo de um array***
 ```php
 <?php
     $projetos = [
@@ -139,7 +139,7 @@ Exemplo de um array
 ?>
 ```
 
-Podemos criar uma lista dentro da lista, utilizado para compor mais de uma lista.
+***Podemos criar uma lista dentro da lista, utilizado para compor mais de uma lista.***
 ```php
 <?php
     $projetos = [
@@ -176,7 +176,7 @@ Podemos criar uma lista dentro da lista, utilizado para compor mais de uma lista
 ```
 
 Podemos melhorar a compreensão dando títulos para cada item do nosso array.
-Exemplo:
+***Exemplo:***
 ```php
 <?php
     $projetos = [
@@ -203,12 +203,12 @@ Exemplo:
     }
 ?>
 ```
-Utilizamos => para indicar que dentro da chave TITULO há um conteúdo.
+***Utilizamos => para indicar que dentro da chave TITULO há um conteúdo.***
 
 ## Foreach
 Foreach é um laço de repetição que permite iterar sobre cada elemento de um array ou objeto.
 
-Exemplo de um foreach
+***Exemplo de um foreach***
 ```php
 <?php
     $projetos = [
