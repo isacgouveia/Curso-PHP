@@ -4,7 +4,7 @@
 - [Variáveis](#page1)
 - [Boleanos e Condicionais](#page2)
 - [Arrays & Foreach](#page3)
-- [Função](#page4)
+- [Funções](#page4)
 
 ---
 ##### por Isac Gouveia
