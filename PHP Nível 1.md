@@ -62,8 +62,21 @@ Em PHP, uma condicional é uma estrutura de controle que permite executar difere
 ?>
 ```
 
-Podemos utilizar um bloco de código HTML junto com o condicional.
-***Exemplo prático***
+***Podemos utilizar o operador de negação (!) para inverter uma condição***
+```php
+    $admin = true; // Armazena um valor booleano
+
+    if(!$admin){
+        echo "Acesso negado.";
+    }else{
+        echo "Acesso permitido.";
+    }
+
+```
+
+***Podemos utilizar um bloco de código HTML junto com o condicional.***
+
+**PHP**
 ```php
     Formato simplificado
     
@@ -74,6 +87,7 @@ Podemos utilizar um bloco de código HTML junto com o condicional.
     <?php endif; ?>
 ```
 
+**HTML**
 ```html
     <div>
         Projeto: <?php if($finalizado): ?>
@@ -103,18 +117,6 @@ Podemos utilizar um bloco de código HTML junto com o condicional.
 
     if($ano < 2024){
         echo "É menor";
-    }
-
-```
-
-***Podemos utilizar o operador de negação (!) para inverter uma condição***
-```php
-    $admin = true;
-
-    if(!$admin){
-        echo "Acesso negado.";
-    }else{
-        echo "Acesso permitido.";
     }
 
 ```
