@@ -246,3 +246,101 @@ Foreach é um laço de repetição que permite iterar sobre cada elemento de um 
     */
 ?>
 ```
+
+---
+
+<a id="page4"></a>
+## Funções
+Em PHP, Função é um bloco de código nomeado e reutilizável que executa uma tarefa específica, podendo receber dados (parâmetros) e devolver um resultado (retorno)
+
+***Exemplo de uma função***
+```php
+<?php
+    // Declaração da função
+    function saudacao(){
+        echo "Sejam bem vindos!";
+    }
+
+    // Chamada da função
+    saudacao(); // Saída: Sejam bem vindos!
+?>
+```
+
+o parâmetro dentro da função pode ser qualquer variável, pois quando chamarmos a função iremos declarar a variável que queremos.
+
+***Exemplo prático***
+
+```php
+<?php
+    $projetos = [
+        [
+            "titulo" => "Meu portfólio",
+            "finalizado" => true,
+            "data" => "2025-08-30",
+            "descricao" => "Meu primeiro portfolio",
+        ],
+    ];
+
+    function Status($p){
+        if($p['finalizado'] == true){
+            echo '<span style="green">✔️ - Finalizado</span>';
+        }else{
+            echo '<span style="red">❌ - Não finalizado</span>';
+        }
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função</title>
+</head>
+<body>
+    <?php foreach($projetos as $projeto):?>
+
+        <div>Projeto: <?php Status($projeto) ?></div> // Saída: ✔️ - Finalizado
+
+        <?php endforeach; ?>
+</body>
+</html>
+```
+
+Podemos melhorar mais o modo que declaramos a função.<br>
+**Exemplo prático:**
+```php
+<?php
+    $projetos = [
+        [
+            "titulo" => "Meu portfólio",
+            "finalizado" => true,
+            "data" => "2025-08-30",
+            "descricao" => "Meu primeiro portfolio",
+        ],
+    ];
+
+    function Status($p){
+        if($p['finalizado'] == true){
+            return '<span style="green">✔️ - Finalizado</span>'; // Alteração
+        }
+        return '<span style="red">❌ - Não finalizado</span>'; // Alteração
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função</title>
+</head>
+<body>
+    <?php foreach($projetos as $projeto):?>
+
+        <div>Projeto: <?= Status($projeto) ?></div> // Alteração
+
+        <?php endforeach; ?>
+</body>
+</html>
+```
