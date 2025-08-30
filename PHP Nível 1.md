@@ -2,7 +2,7 @@
 # PHP Nível 1
 ###### Index
 - [Variáveis](#page1)
-- [Condicionais e Boleanos](#page2)
+- [Boleanos e Condicionais](#page2)
 - [Arrays & Foreach](#page3)
 
 ---
@@ -32,7 +32,8 @@ Algumas regras para nomear variáveis:
 ---
 
 <a id="page2"></a>
-## Condicionais e booleanos
+## booleanos e Condicionais
+### Booleanos
 Em PHP, um valor booleano é um tipo de dado básico que pode ter apenas dois valores: true (verdadeiro) ou false (falso). Os booleanos são usado para controlar a execução do código em condições e laços.
 
 ***Exemplo de uma declaração de valores booleanos em PHP***
@@ -46,6 +47,7 @@ Em PHP, um valor booleano é um tipo de dado básico que pode ter apenas dois va
 ?>
 ```
 
+### Condicionais
 Em PHP, uma condicional é uma estrutura de controle que permite executar diferentes blocos de código com base no resultado de uma condição, que pode ser verdadeira ou falsa.
 
 ***Exemplo de uma declaração condicional em PHP***
@@ -125,9 +127,12 @@ Em PHP, uma condicional é uma estrutura de controle que permite executar difere
 
 <a id="page3"></a>
 ## Arrays & Foreach
+### Arrays
 Em PHP, um array é uma estrutura de dados fundamental que permite armazenar múltiplos valores de tipos diferentes (como números, strings, objeto ou outros arrays) sob um único nome de variável. É um "mapa ordenado".
 
 Utilizamos o [] para indicar que a variável é do tipo array.
+<br>
+
 ***Exemplo de um array***
 ```php
 <?php
@@ -164,7 +169,10 @@ Utilizamos o [] para indicar que a variável é do tipo array.
         CHAMANDO A NOSSA LISTA ARRAY 
         Por padrão o índice sempre começa no 0, exemplo:
         Item Meu portfólio = 0;
-        Lista de tarefas = 1;
+        false = 1;
+        2025-08-30 = 2;
+        Meu primeiro portfolio = 3
+
     */
 
     foreach($projetos as $projeto){
@@ -178,6 +186,8 @@ Utilizamos o [] para indicar que a variável é do tipo array.
 ```
 
 Podemos melhorar a compreensão dando títulos para cada item do nosso array.
+<br>
+
 ***Exemplo:***
 ```php
 <?php
