@@ -6,7 +6,8 @@
 - [Arrays & Foreach](#page3)
 - [Funções](#page4)
 - [Filtros](#page5)
-- [Exercícios](#page6)
+- [Array Filter](#page6)
+- [Exercícios](#page7)
 
 ---
 ##### por Isac Gouveia
@@ -436,6 +437,48 @@ Explicação:
 ---
 
 <a id="page6"></a>
+
+## Array Filter
+Utilizado para identificar pontos para refatoração, separando regras de negócio e melhorando a legibilidade do código.
+
+**Exemplo Prático - Função Filtrar**<br>
+**DE:**
+```php
+<?php
+    function filtrar($projetos, $funcao){
+        $finalizados = [];
+
+        foreach($projetos as $projeto){
+            if($funcao($projeto)){
+                $finalizados [] = $projeto;
+            }
+        }
+
+        return $finalizados;
+    }
+
+    $Filtrados = filtrar($projetos, function($projeto){
+        return $projeto['ano'] < 2024;
+    });
+
+?>
+```
+
+**PARA:**
+```php
+<?php
+
+    $filtrados = array_filter($projetos, function($projeto){
+        return $projeto['ano'] < 2023;
+    });
+
+?>
+```
+Observa-se que retiramos toda a função que estavamos utilizando para realizar o filtro, pois o array_filter já faz todo esse processo.
+
+---
+
+<a id="page7"></a>
 
 ## Exercícios
 - **Exercício 1** - Criar uma função de filtro.
