@@ -438,5 +438,5 @@ Explicação:
 <a id="page6"></a>
 
 ## Exercícios
--**Exercício 1** - Criar uma função de filtro.
--**Exercício 2** - Refatorar a função de filtro.
+- **Exercício 1** - Criar uma função de filtro.
+- **Exercício 2** - Refatorar a função de filtro.
