@@ -1,5 +1,4 @@
 ```php
-```html
 <?php
     require 'database.php';
 
@@ -75,5 +74,4 @@
     
 </body>
 </html>
-```
 ```
